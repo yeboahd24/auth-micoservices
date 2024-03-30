@@ -1,0 +1,60 @@
+{
+  "email": {
+    "email_host": "smtp.gmail.com",
+    "email_port": "587",
+    "email_user": "noreply@mesika.org",
+    "email_password": ""
+  },
+  "security": {
+    "allowed_hosts": ["localhost", "127.0.0.1"]
+  },
+  "celery": {
+    "default_retry_delay": 30,
+    "max_retries": 3,
+    "interval_start": 0,
+    "interval_step": 0.2,
+    "interval_max": 0.2,
+    "routing_key": "user",
+    "exchange": "user",
+    "queue": "user"
+  },
+  "rabbitmq": {
+    "rabbitmq_vhost": "cbs",
+    "rabbitmq_host": "localhost",
+    "rabbitmq_password": "mesika",
+    "rabbitmq_port": 5672,
+    "rabbitmq_user": "cbs"
+  },
+  "redis": {
+    "redis_user": "dominic",
+    "redis_password": "password",
+    "redis_host": "localhost",
+    "redis_port": "6379"
+  },
+  "db": {
+    "default": {
+      "db_name": "pgml_m0rkbxzq1ewj2de",
+      "db_host": "02f7e6f1-1adb-4347-835a-02c74fcccb0e.db.cloud.postgresml.org",
+      "db_user": "u_tzt623sgywyqhd6",
+      "db_password": "rekphmlozh3ce6g",
+      "db_port": 6432,
+      "conn_max": 1,
+      "conn_health_checks": 1
+    },
+    "auth": {
+      "db_name": "staff",
+      "db_host": "localhost",
+      "db_user": "auth_user",
+      "db_password": "password",
+      "db_port": 5432,
+      "conn_max": 1,
+      "conn_health_checks": 1
+    }
+  },
+  "secret_key": "%%-)%!@@5-d)%mti+w)f9%%1#^o-0%lf8j@+h+)ezu(l74xzm$",
+  "twilio": {
+    "TWILIO_ACCOUNT_SID": "ACbf0319a2913d985e3b844e5aabfe8cd9",
+    "TWILIO_AUTH_TOKEN": "f585697c42deb35e0894ac5085b23899",
+    "SMS_FROM": "+12055457346"
+  }
+}
